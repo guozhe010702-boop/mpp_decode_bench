@@ -1,0 +1,44 @@
+# Local captures and large benchmark artifacts
+**/results/
+*.tgz
+*.tar
+*.tar.gz
+*.zip
+*.nv12
+*.yuv
+*.hevc
+*.h264
+*.mp4
+*.mkv
+*.ts
+*.png
+*.jpg
+*.jpeg
+*.log
+*.progress
+
+# Build products and Python caches
+**/build/
+**/cmake-build-*/
+**/__pycache__/
+*.py[cod]
+*.o
+*.a
+*.so
+*.so.*
+*.dll
+*.exe
+**/imx415_low_latency
+
+# Machine-local runtime state and credentials
+**/active.json
+**/state/
+**/hdmi_status.json
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.DS_Store
+Thumbs.db
