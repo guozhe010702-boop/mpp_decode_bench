@@ -1,0 +1,1919 @@
+{
+  "running": false,
+  "completed": true,
+  "results": [
+    {
+      "completed": true,
+      "scope": "V4L2_DQBUF_TO_DRM_FLIP_NOT_OPTICAL",
+      "summary": {
+        "codec": "hevc",
+        "display_scheduling": "deadline",
+        "display_margin_us": 3500,
+        "missed_targets": 13,
+        "max_overlay_prepare_ms": 0.001,
+        "overlay_preparation": "worker",
+        "max_overlay_worker_ms": 0.792,
+        "overlay_updates": 164,
+        "overlay_errors": 0,
+        "decoder_output": "poll",
+        "decoder_output_calls": 516582,
+        "decoder_empty_returns": 505476,
+        "decoder_output_timeouts": 0,
+        "decoder_legacy_wait_timeouts": 0,
+        "capture_layout": "nv12m",
+        "encoder_input": "copy",
+        "input_copied_frames": 11107,
+        "input_shared_frames": 0,
+        "camera_dma_imports": 0,
+        "held_camera_peak": 0,
+        "capture_buffers_actual": 8,
+        "elapsed_s": 185.422,
+        "captured": 11111,
+        "encoded": 11107,
+        "decoded": 11105,
+        "displayed": 11089,
+        "bytes": 465405695,
+        "raw_drops": 0,
+        "display_drops": 16,
+        "stale_drops": 4,
+        "driver_gaps": 0,
+        "startup_sequence_gaps": 4726,
+        "errors": 0,
+        "interrupted": false,
+        "latency": {
+          "commit_lead_ms": {
+            "n": 10793,
+            "p50": 3.5,
+            "p95": 3.5,
+            "p99": 3.5,
+            "max": 3.492,
+            "quantile_resolution_ms": 0.1
+          },
+          "decode_ms": {
+            "n": 10805,
+            "p50": 5.1,
+            "p95": 5.3,
+            "p99": 5.9,
+            "max": 10.031,
+            "quantile_resolution_ms": 0.1
+          },
+          "display_wait_ms": {
+            "n": 10805,
+            "p50": 6.7,
+            "p95": 12.9,
+            "p99": 13.7,
+            "max": 25.257,
+            "quantile_resolution_ms": 0.1
+          },
+          "dq_to_flip_ms": {
+            "n": 10805,
+            "p50": 32.8,
+            "p95": 39.1,
+            "p99": 39.9,
+            "max": 51.413,
+            "quantile_resolution_ms": 0.1
+          },
+          "dq_to_flip_received_ms": {
+            "n": 10805,
+            "p50": 32.9,
+            "p95": 39.1,
+            "p99": 39.9,
+            "max": 51.495,
+            "quantile_resolution_ms": 0.1
+          },
+          "driver_timestamp_to_flip_ms": {
+            "n": 10805,
+            "p50": 64.9,
+            "p95": 71.1,
+            "p99": 71.9,
+            "max": 83.425,
+            "quantile_resolution_ms": 0.1
+          },
+          "encode_ms": {
+            "n": 10805,
+            "p50": 15.2,
+            "p95": 15.2,
+            "p99": 15.3,
+            "max": 25.117,
+            "quantile_resolution_ms": 0.1
+          },
+          "kms_flip_ms": {
+            "n": 10805,
+            "p50": 3.5,
+            "p95": 3.5,
+            "p99": 3.5,
+            "max": 20.107,
+            "quantile_resolution_ms": 0.1
+          },
+          "layout_copy_ms": {
+            "n": 10805,
+            "p50": 2.6,
+            "p95": 2.7,
+            "p99": 2.9,
+            "max": 6.668,
+            "quantile_resolution_ms": 0.1
+          },
+          "raw_wait_ms": {
+            "n": 10805,
+            "p50": 0.1,
+            "p95": 0.1,
+            "p99": 0.1,
+            "max": 12.534,
+            "quantile_resolution_ms": 0.1
+          }
+        }
+      },
+      "rates": {
+        "captured_fps": 59.99474836667786,
+        "encoded_fps": 59.99474836667786,
+        "decoded_fps": 59.99474836667786,
+        "displayed_fps": 59.92777748478017,
+        "actual_mbps": 20.12496855856618
+      },
+      "latency_by_minute": [
+        {
+          "minute_monotonic": 383,
+          "n": 3204,
+          "p50_ms": 31.97,
+          "p95_ms": 34.563
+        },
+        {
+          "minute_monotonic": 384,
+          "n": 3594,
+          "p50_ms": 26.466,
+          "p95_ms": 39.663
+        },
+        {
+          "minute_monotonic": 385,
+          "n": 3598,
+          "p50_ms": 36.208,
+          "p95_ms": 39.074
+        },
+        {
+          "minute_monotonic": 386,
+          "n": 409,
+          "p50_ms": 32.798,
+          "p95_ms": 32.929
+        }
+      ],
+      "v4l2_flag_counts": {
+        "8193": 11089
+      },
+      "max_temperature_c": 46.23,
+      "max_rss_mib": 104.63671875,
+      "mean_cpu_one_core_percent": 20.546469600235458,
+      "quality_matched_single_frame": {
+        "stream_probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "width": 3840,
+              "height": 2160,
+              "has_b_frames": 0,
+              "color_range": "pc",
+              "color_space": "bt709",
+              "r_frame_rate": "60/1"
+            }
+          ]
+        },
+        "psnr": 39.895946,
+        "ssim": 0.930982
+      },
+      "frame_audit": {
+        "unique_frame_ids": 11111,
+        "duplicate_ids": 0,
+        "nonmonotonic_display_timelines": 0,
+        "outcomes": {
+          "invalid_driver_timestamp": 4,
+          "displayed": 11089,
+          "display_replaced": 16,
+          "stopped_decoder": 2
+        },
+        "all_capture_ids_accounted": true
+      },
+      "deadline_audit": {
+        "targeted_frames": 10805,
+        "missed_targets": 13,
+        "missed_target_percent": 0.12031466913465988,
+        "commit_lead_p50_ms": 3.438,
+        "commit_lead_min_ms": -8.221,
+        "counter_matches_trace": true
+      },
+      "stall_recovery": null,
+      "mpp_fd_observed": true,
+      "restored": true,
+      "meets_internal_targets": true,
+      "name": "nv12m-copy-poll-1",
+      "output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/v3-dma-comparison-20261117/nv12m-copy-poll-1",
+      "cadence": {
+        "displayed_frames": 10805,
+        "interval_p99_ms": 16.682,
+        "interval_max_ms": 33.351,
+        "interval_over25ms": 13,
+        "interval_over41_7ms": 0,
+        "misses": 13,
+        "misses_with_decode_after_target": 9,
+        "misses_with_commit_after_target": 12
+      },
+      "args": [
+        "--seconds",
+        "180",
+        "--codec",
+        "hevc",
+        "--buffers",
+        "8",
+        "--capture-layout",
+        "nv12m",
+        "--encoder-input",
+        "copy",
+        "--decoder-output",
+        "poll",
+        "--overlay-preparation",
+        "worker",
+        "--capture-startup-poll-ms",
+        "0",
+        "--display-scheduling",
+        "deadline",
+        "--display-margin-us",
+        "3500"
+      ]
+    },
+    {
+      "completed": true,
+      "scope": "V4L2_DQBUF_TO_DRM_FLIP_NOT_OPTICAL",
+      "summary": {
+        "codec": "hevc",
+        "display_scheduling": "deadline",
+        "display_margin_us": 3500,
+        "missed_targets": 56,
+        "max_overlay_prepare_ms": 0.001,
+        "overlay_preparation": "worker",
+        "max_overlay_worker_ms": 0.851,
+        "overlay_updates": 165,
+        "overlay_errors": 0,
+        "decoder_output": "wait",
+        "decoder_output_calls": 11192,
+        "decoder_empty_returns": 0,
+        "decoder_output_timeouts": 87,
+        "decoder_legacy_wait_timeouts": 87,
+        "capture_layout": "nv12",
+        "encoder_input": "copy",
+        "input_copied_frames": 11105,
+        "input_shared_frames": 0,
+        "camera_dma_imports": 0,
+        "held_camera_peak": 0,
+        "capture_buffers_actual": 8,
+        "elapsed_s": 185.409,
+        "captured": 11112,
+        "encoded": 11105,
+        "decoded": 11104,
+        "displayed": 11047,
+        "bytes": 465210581,
+        "raw_drops": 2,
+        "display_drops": 56,
+        "stale_drops": 4,
+        "driver_gaps": 0,
+        "startup_sequence_gaps": 273,
+        "errors": 0,
+        "interrupted": false,
+        "latency": {
+          "commit_lead_ms": {
+            "n": 10711,
+            "p50": 3.5,
+            "p95": 3.5,
+            "p99": 3.5,
+            "max": 3.495,
+            "quantile_resolution_ms": 0.1
+          },
+          "decode_ms": {
+            "n": 10763,
+            "p50": 5,
+            "p95": 5.1,
+            "p99": 5.8,
+            "max": 16.9,
+            "quantile_resolution_ms": 0.1
+          },
+          "display_wait_ms": {
+            "n": 10763,
+            "p50": 8.2,
+            "p95": 15.2,
+            "p99": 15.8,
+            "max": 21.867,
+            "quantile_resolution_ms": 0.1
+          },
+          "dq_to_flip_ms": {
+            "n": 10763,
+            "p50": 34.5,
+            "p95": 41.4,
+            "p99": 44.2,
+            "max": 53.704,
+            "quantile_resolution_ms": 0.1
+          },
+          "dq_to_flip_received_ms": {
+            "n": 10763,
+            "p50": 34.5,
+            "p95": 41.5,
+            "p99": 44.2,
+            "max": 53.741,
+            "quantile_resolution_ms": 0.1
+          },
+          "driver_timestamp_to_flip_ms": {
+            "n": 10763,
+            "p50": 66.5,
+            "p95": 73.5,
+            "p99": 76.2,
+            "max": 85.732,
+            "quantile_resolution_ms": 0.1
+          },
+          "encode_ms": {
+            "n": 10763,
+            "p50": 15.1,
+            "p95": 15.2,
+            "p99": 21.1,
+            "max": 28.246,
+            "quantile_resolution_ms": 0.1
+          },
+          "kms_flip_ms": {
+            "n": 10763,
+            "p50": 3.5,
+            "p95": 3.5,
+            "p99": 3.5,
+            "max": 20.111,
+            "quantile_resolution_ms": 0.1
+          },
+          "layout_copy_ms": {
+            "n": 10763,
+            "p50": 2.6,
+            "p95": 2.9,
+            "p99": 3.1,
+            "max": 19.657,
+            "quantile_resolution_ms": 0.1
+          },
+          "raw_wait_ms": {
+            "n": 10763,
+            "p50": 0.1,
+            "p95": 0.1,
+            "p99": 0.2,
+            "max": 16.585,
+            "quantile_resolution_ms": 0.1
+          }
+        }
+      },
+      "rates": {
+        "captured_fps": 59.993502843161856,
+        "encoded_fps": 59.98234126123755,
+        "decoded_fps": 59.98234126123755,
+        "displayed_fps": 59.69214013120551,
+        "actual_mbps": 20.11919649780812
+      },
+      "latency_by_minute": [
+        {
+          "minute_monotonic": 386,
+          "n": 2578,
+          "p50_ms": 39.183,
+          "p95_ms": 41.261
+        },
+        {
+          "minute_monotonic": 387,
+          "n": 3576,
+          "p50_ms": 34.208,
+          "p95_ms": 36.978
+        },
+        {
+          "minute_monotonic": 388,
+          "n": 3572,
+          "p50_ms": 28.637,
+          "p95_ms": 41.831
+        },
+        {
+          "minute_monotonic": 389,
+          "n": 1037,
+          "p50_ms": 39.733,
+          "p95_ms": 41.013
+        }
+      ],
+      "v4l2_flag_counts": {
+        "8193": 11047
+      },
+      "max_temperature_c": 47.153,
+      "max_rss_mib": 104.74609375,
+      "mean_cpu_one_core_percent": 19.71793715365816,
+      "quality_matched_single_frame": {
+        "stream_probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "width": 3840,
+              "height": 2160,
+              "has_b_frames": 0,
+              "color_range": "pc",
+              "color_space": "bt709",
+              "r_frame_rate": "60/1"
+            }
+          ]
+        },
+        "psnr": 39.816293,
+        "ssim": 0.929758
+      },
+      "frame_audit": {
+        "unique_frame_ids": 11112,
+        "duplicate_ids": 0,
+        "nonmonotonic_display_timelines": 0,
+        "outcomes": {
+          "invalid_driver_timestamp": 4,
+          "displayed": 11047,
+          "display_replaced": 56,
+          "raw_replaced": 2,
+          "stopped_raw": 1,
+          "stopped_display": 1,
+          "stopped_decoder": 1
+        },
+        "all_capture_ids_accounted": true
+      },
+      "deadline_audit": {
+        "targeted_frames": 10763,
+        "missed_targets": 56,
+        "missed_target_percent": 0.5203010313109728,
+        "commit_lead_p50_ms": 3.44,
+        "commit_lead_min_ms": -12.218,
+        "counter_matches_trace": true
+      },
+      "stall_recovery": null,
+      "mpp_fd_observed": true,
+      "restored": true,
+      "meets_internal_targets": true,
+      "name": "nv12-copy-wait",
+      "output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/v3-dma-comparison-20261117/nv12-copy-wait",
+      "cadence": {
+        "displayed_frames": 10763,
+        "interval_p99_ms": 16.707,
+        "interval_max_ms": 33.414,
+        "interval_over25ms": 56,
+        "interval_over41_7ms": 0,
+        "misses": 56,
+        "misses_with_decode_after_target": 43,
+        "misses_with_commit_after_target": 52
+      },
+      "args": [
+        "--seconds",
+        "180",
+        "--codec",
+        "hevc",
+        "--buffers",
+        "8",
+        "--capture-layout",
+        "nv12",
+        "--encoder-input",
+        "copy",
+        "--decoder-output",
+        "wait",
+        "--overlay-preparation",
+        "worker",
+        "--capture-startup-poll-ms",
+        "0",
+        "--display-scheduling",
+        "deadline",
+        "--display-margin-us",
+        "3500"
+      ]
+    },
+    {
+      "completed": true,
+      "scope": "V4L2_DQBUF_TO_DRM_FLIP_NOT_OPTICAL",
+      "summary": {
+        "codec": "hevc",
+        "display_scheduling": "deadline",
+        "display_margin_us": 3500,
+        "missed_targets": 3,
+        "max_overlay_prepare_ms": 0.001,
+        "overlay_preparation": "worker",
+        "max_overlay_worker_ms": 0.6,
+        "overlay_updates": 164,
+        "overlay_errors": 0,
+        "decoder_output": "wait",
+        "decoder_output_calls": 11114,
+        "decoder_empty_returns": 0,
+        "decoder_output_timeouts": 7,
+        "decoder_legacy_wait_timeouts": 7,
+        "capture_layout": "nv12",
+        "encoder_input": "dmabuf",
+        "input_copied_frames": 0,
+        "input_shared_frames": 11107,
+        "camera_dma_imports": 8,
+        "held_camera_peak": 2,
+        "capture_buffers_actual": 8,
+        "elapsed_s": 185.415,
+        "captured": 11111,
+        "encoded": 11107,
+        "decoded": 11106,
+        "displayed": 11101,
+        "bytes": 465259470,
+        "raw_drops": 0,
+        "display_drops": 5,
+        "stale_drops": 4,
+        "driver_gaps": 0,
+        "startup_sequence_gaps": 219,
+        "errors": 0,
+        "interrupted": false,
+        "latency": {
+          "commit_lead_ms": {
+            "n": 10813,
+            "p50": 3.5,
+            "p95": 3.5,
+            "p99": 3.5,
+            "max": 3.495,
+            "quantile_resolution_ms": 0.1
+          },
+          "decode_ms": {
+            "n": 10816,
+            "p50": 4.7,
+            "p95": 4.8,
+            "p99": 5.8,
+            "max": 17.146,
+            "quantile_resolution_ms": 0.1
+          },
+          "display_wait_ms": {
+            "n": 10816,
+            "p50": 7.6,
+            "p95": 14.6,
+            "p99": 15.4,
+            "max": 15.595,
+            "quantile_resolution_ms": 0.1
+          },
+          "dq_to_flip_ms": {
+            "n": 10816,
+            "p50": 30.6,
+            "p95": 37.7,
+            "p99": 38.4,
+            "max": 48.82,
+            "quantile_resolution_ms": 0.1
+          },
+          "dq_to_flip_received_ms": {
+            "n": 10816,
+            "p50": 30.6,
+            "p95": 37.7,
+            "p99": 38.4,
+            "max": 48.847,
+            "quantile_resolution_ms": 0.1
+          },
+          "driver_timestamp_to_flip_ms": {
+            "n": 10816,
+            "p50": 62.6,
+            "p95": 69.6,
+            "p99": 70.4,
+            "max": 80.784,
+            "quantile_resolution_ms": 0.1
+          },
+          "encode_ms": {
+            "n": 10816,
+            "p50": 14.9,
+            "p95": 15,
+            "p99": 15.1,
+            "max": 19.774,
+            "quantile_resolution_ms": 0.1
+          },
+          "kms_flip_ms": {
+            "n": 10816,
+            "p50": 3.5,
+            "p95": 3.5,
+            "p99": 3.5,
+            "max": 16.635,
+            "quantile_resolution_ms": 0.1
+          },
+          "layout_copy_ms": {
+            "n": 10816,
+            "p50": 0.1,
+            "p95": 0.1,
+            "p99": 0.1,
+            "max": 0.008,
+            "quantile_resolution_ms": 0.1
+          },
+          "raw_wait_ms": {
+            "n": 10816,
+            "p50": 0.1,
+            "p95": 0.1,
+            "p99": 0.1,
+            "max": 0.547,
+            "quantile_resolution_ms": 0.1
+          }
+        }
+      },
+      "rates": {
+        "captured_fps": 59.995923625803144,
+        "encoded_fps": 59.995923625803144,
+        "decoded_fps": 59.995923625803144,
+        "displayed_fps": 59.984761593500664,
+        "actual_mbps": 20.117558077728376
+      },
+      "latency_by_minute": [
+        {
+          "minute_monotonic": 389,
+          "n": 2025,
+          "p50_ms": 30.416,
+          "p95_ms": 31.973
+        },
+        {
+          "minute_monotonic": 390,
+          "n": 3599,
+          "p50_ms": 25.413,
+          "p95_ms": 28.302
+        },
+        {
+          "minute_monotonic": 391,
+          "n": 3600,
+          "p50_ms": 35.36,
+          "p95_ms": 38.235
+        },
+        {
+          "minute_monotonic": 392,
+          "n": 1592,
+          "p50_ms": 31.057,
+          "p95_ms": 32.786
+        }
+      ],
+      "v4l2_flag_counts": {
+        "8193": 11101
+      },
+      "max_temperature_c": 48.076,
+      "max_rss_mib": 104.66796875,
+      "mean_cpu_one_core_percent": 5.710958771447509,
+      "quality_matched_single_frame": {
+        "stream_probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "width": 3840,
+              "height": 2160,
+              "has_b_frames": 0,
+              "color_range": "pc",
+              "color_space": "bt709",
+              "r_frame_rate": "60/1"
+            }
+          ]
+        },
+        "psnr": 39.802722,
+        "ssim": 0.929717
+      },
+      "frame_audit": {
+        "unique_frame_ids": 11111,
+        "duplicate_ids": 0,
+        "nonmonotonic_display_timelines": 0,
+        "outcomes": {
+          "invalid_driver_timestamp": 4,
+          "displayed": 11101,
+          "display_replaced": 5,
+          "stopped_decoder": 1
+        },
+        "all_capture_ids_accounted": true
+      },
+      "deadline_audit": {
+        "targeted_frames": 10816,
+        "missed_targets": 3,
+        "missed_target_percent": 0.027736686390532544,
+        "commit_lead_p50_ms": 3.44,
+        "commit_lead_min_ms": -2.711,
+        "counter_matches_trace": true
+      },
+      "stall_recovery": null,
+      "mpp_fd_observed": true,
+      "restored": true,
+      "meets_internal_targets": true,
+      "name": "hevc-dma-wait-1",
+      "output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/v3-dma-comparison-20261117/hevc-dma-wait-1",
+      "cadence": {
+        "displayed_frames": 10816,
+        "interval_p99_ms": 16.674,
+        "interval_max_ms": 33.339,
+        "interval_over25ms": 3,
+        "interval_over41_7ms": 0,
+        "misses": 3,
+        "misses_with_decode_after_target": 2,
+        "misses_with_commit_after_target": 3
+      },
+      "args": [
+        "--seconds",
+        "180",
+        "--codec",
+        "hevc",
+        "--buffers",
+        "8",
+        "--capture-layout",
+        "nv12",
+        "--encoder-input",
+        "dmabuf",
+        "--decoder-output",
+        "wait",
+        "--overlay-preparation",
+        "worker",
+        "--capture-startup-poll-ms",
+        "0",
+        "--display-scheduling",
+        "deadline",
+        "--display-margin-us",
+        "3500"
+      ]
+    },
+    {
+      "completed": true,
+      "scope": "V4L2_DQBUF_TO_DRM_FLIP_NOT_OPTICAL",
+      "summary": {
+        "codec": "hevc",
+        "display_scheduling": "deadline",
+        "display_margin_us": 3500,
+        "missed_targets": 31,
+        "max_overlay_prepare_ms": 0.001,
+        "overlay_preparation": "worker",
+        "max_overlay_worker_ms": 0.827,
+        "overlay_updates": 164,
+        "overlay_errors": 0,
+        "decoder_output": "poll",
+        "decoder_output_calls": 518291,
+        "decoder_empty_returns": 507184,
+        "decoder_output_timeouts": 0,
+        "decoder_legacy_wait_timeouts": 0,
+        "capture_layout": "nv12m",
+        "encoder_input": "copy",
+        "input_copied_frames": 11108,
+        "input_shared_frames": 0,
+        "camera_dma_imports": 0,
+        "held_camera_peak": 0,
+        "capture_buffers_actual": 8,
+        "elapsed_s": 185.441,
+        "captured": 11112,
+        "encoded": 11108,
+        "decoded": 11106,
+        "displayed": 11074,
+        "bytes": 465343666,
+        "raw_drops": 0,
+        "display_drops": 32,
+        "stale_drops": 4,
+        "driver_gaps": 0,
+        "startup_sequence_gaps": 242,
+        "errors": 0,
+        "interrupted": false,
+        "latency": {
+          "commit_lead_ms": {
+            "n": 10757,
+            "p50": 3.5,
+            "p95": 3.5,
+            "p99": 3.5,
+            "max": 3.49,
+            "quantile_resolution_ms": 0.1
+          },
+          "decode_ms": {
+            "n": 10788,
+            "p50": 5.1,
+            "p95": 5.3,
+            "p99": 6,
+            "max": 15.822,
+            "quantile_resolution_ms": 0.1
+          },
+          "display_wait_ms": {
+            "n": 10788,
+            "p50": 9.2,
+            "p95": 15.5,
+            "p99": 16.3,
+            "max": 18.35,
+            "quantile_resolution_ms": 0.1
+          },
+          "dq_to_flip_ms": {
+            "n": 10788,
+            "p50": 35.5,
+            "p95": 41.9,
+            "p99": 42.7,
+            "max": 51.736,
+            "quantile_resolution_ms": 0.1
+          },
+          "dq_to_flip_received_ms": {
+            "n": 10788,
+            "p50": 35.5,
+            "p95": 41.9,
+            "p99": 42.7,
+            "max": 51.764,
+            "quantile_resolution_ms": 0.1
+          },
+          "driver_timestamp_to_flip_ms": {
+            "n": 10788,
+            "p50": 67.5,
+            "p95": 73.9,
+            "p99": 74.7,
+            "max": 83.775,
+            "quantile_resolution_ms": 0.1
+          },
+          "encode_ms": {
+            "n": 10788,
+            "p50": 15.1,
+            "p95": 15.2,
+            "p99": 20.5,
+            "max": 27.412,
+            "quantile_resolution_ms": 0.1
+          },
+          "kms_flip_ms": {
+            "n": 10788,
+            "p50": 3.5,
+            "p95": 3.5,
+            "p99": 3.5,
+            "max": 16.624,
+            "quantile_resolution_ms": 0.1
+          },
+          "layout_copy_ms": {
+            "n": 10788,
+            "p50": 2.7,
+            "p95": 3,
+            "p99": 3.2,
+            "max": 14.386,
+            "quantile_resolution_ms": 0.1
+          },
+          "raw_wait_ms": {
+            "n": 10788,
+            "p50": 0.1,
+            "p95": 0.1,
+            "p99": 0.1,
+            "max": 16.468,
+            "quantile_resolution_ms": 0.1
+          }
+        }
+      },
+      "rates": {
+        "captured_fps": 59.99314411897827,
+        "encoded_fps": 59.99314411897827,
+        "decoded_fps": 59.998724357478785,
+        "displayed_fps": 59.831317202463495,
+        "actual_mbps": 20.120871581915583
+      },
+      "latency_by_minute": [
+        {
+          "minute_monotonic": 392,
+          "n": 1450,
+          "p50_ms": 36.422,
+          "p95_ms": 37.577
+        },
+        {
+          "minute_monotonic": 393,
+          "n": 3580,
+          "p50_ms": 31.97,
+          "p95_ms": 34.898
+        },
+        {
+          "minute_monotonic": 394,
+          "n": 3589,
+          "p50_ms": 39.469,
+          "p95_ms": 42.339
+        },
+        {
+          "minute_monotonic": 395,
+          "n": 2169,
+          "p50_ms": 37.06,
+          "p95_ms": 38.805
+        }
+      ],
+      "v4l2_flag_counts": {
+        "8193": 11074
+      },
+      "max_temperature_c": 48.076,
+      "max_rss_mib": 104.66796875,
+      "mean_cpu_one_core_percent": 20.699316418939954,
+      "quality_matched_single_frame": {
+        "stream_probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "width": 3840,
+              "height": 2160,
+              "has_b_frames": 0,
+              "color_range": "pc",
+              "color_space": "bt709",
+              "r_frame_rate": "60/1"
+            }
+          ]
+        },
+        "psnr": 39.947237,
+        "ssim": 0.931579
+      },
+      "frame_audit": {
+        "unique_frame_ids": 11112,
+        "duplicate_ids": 0,
+        "nonmonotonic_display_timelines": 0,
+        "outcomes": {
+          "invalid_driver_timestamp": 4,
+          "displayed": 11074,
+          "display_replaced": 32,
+          "stopped_decoder": 2
+        },
+        "all_capture_ids_accounted": true
+      },
+      "deadline_audit": {
+        "targeted_frames": 10788,
+        "missed_targets": 31,
+        "missed_target_percent": 0.28735632183908044,
+        "commit_lead_p50_ms": 3.438,
+        "commit_lead_min_ms": -12.937,
+        "counter_matches_trace": true
+      },
+      "stall_recovery": null,
+      "mpp_fd_observed": true,
+      "restored": true,
+      "meets_internal_targets": true,
+      "name": "nv12m-copy-poll-2",
+      "output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/v3-dma-comparison-20261117/nv12m-copy-poll-2",
+      "cadence": {
+        "displayed_frames": 10788,
+        "interval_p99_ms": 16.685,
+        "interval_max_ms": 33.39,
+        "interval_over25ms": 31,
+        "interval_over41_7ms": 0,
+        "misses": 31,
+        "misses_with_decode_after_target": 31,
+        "misses_with_commit_after_target": 31
+      },
+      "args": [
+        "--seconds",
+        "180",
+        "--codec",
+        "hevc",
+        "--buffers",
+        "8",
+        "--capture-layout",
+        "nv12m",
+        "--encoder-input",
+        "copy",
+        "--decoder-output",
+        "poll",
+        "--overlay-preparation",
+        "worker",
+        "--capture-startup-poll-ms",
+        "0",
+        "--display-scheduling",
+        "deadline",
+        "--display-margin-us",
+        "3500"
+      ]
+    },
+    {
+      "completed": true,
+      "scope": "V4L2_DQBUF_TO_DRM_FLIP_NOT_OPTICAL",
+      "summary": {
+        "codec": "h264",
+        "display_scheduling": "deadline",
+        "display_margin_us": 3500,
+        "missed_targets": 75,
+        "max_overlay_prepare_ms": 0.001,
+        "overlay_preparation": "worker",
+        "max_overlay_worker_ms": 0.591,
+        "overlay_updates": 165,
+        "overlay_errors": 0,
+        "decoder_output": "wait",
+        "decoder_output_calls": 11304,
+        "decoder_empty_returns": 0,
+        "decoder_output_timeouts": 197,
+        "decoder_legacy_wait_timeouts": 197,
+        "capture_layout": "nv12",
+        "encoder_input": "dmabuf",
+        "input_copied_frames": 0,
+        "input_shared_frames": 11107,
+        "camera_dma_imports": 8,
+        "held_camera_peak": 2,
+        "capture_buffers_actual": 8,
+        "elapsed_s": 185.429,
+        "captured": 11111,
+        "encoded": 11107,
+        "decoded": 11106,
+        "displayed": 11028,
+        "bytes": 448359708,
+        "raw_drops": 0,
+        "display_drops": 77,
+        "stale_drops": 4,
+        "driver_gaps": 0,
+        "startup_sequence_gaps": 276,
+        "errors": 0,
+        "interrupted": false,
+        "latency": {
+          "commit_lead_ms": {
+            "n": 10671,
+            "p50": 3.5,
+            "p95": 3.5,
+            "p99": 3.5,
+            "max": 3.493,
+            "quantile_resolution_ms": 0.1
+          },
+          "decode_ms": {
+            "n": 10742,
+            "p50": 5.9,
+            "p95": 6,
+            "p99": 12.2,
+            "max": 29.069,
+            "quantile_resolution_ms": 0.1
+          },
+          "display_wait_ms": {
+            "n": 10742,
+            "p50": 9.4,
+            "p95": 15.5,
+            "p99": 16.7,
+            "max": 23.621,
+            "quantile_resolution_ms": 0.1
+          },
+          "dq_to_flip_ms": {
+            "n": 10742,
+            "p50": 34.2,
+            "p95": 40.1,
+            "p99": 41.1,
+            "max": 59.056,
+            "quantile_resolution_ms": 0.1
+          },
+          "dq_to_flip_received_ms": {
+            "n": 10742,
+            "p50": 34.3,
+            "p95": 40.1,
+            "p99": 41.1,
+            "max": 59.082,
+            "quantile_resolution_ms": 0.1
+          },
+          "driver_timestamp_to_flip_ms": {
+            "n": 10742,
+            "p50": 66.2,
+            "p95": 72.1,
+            "p99": 73.1,
+            "max": 91.056,
+            "quantile_resolution_ms": 0.1
+          },
+          "encode_ms": {
+            "n": 10742,
+            "p50": 15.1,
+            "p95": 15.2,
+            "p99": 15.8,
+            "max": 28.757,
+            "quantile_resolution_ms": 0.1
+          },
+          "kms_flip_ms": {
+            "n": 10742,
+            "p50": 3.5,
+            "p95": 3.5,
+            "p99": 3.5,
+            "max": 20.147,
+            "quantile_resolution_ms": 0.1
+          },
+          "layout_copy_ms": {
+            "n": 10742,
+            "p50": 0.1,
+            "p95": 0.1,
+            "p99": 0.1,
+            "max": 0.007,
+            "quantile_resolution_ms": 0.1
+          },
+          "raw_wait_ms": {
+            "n": 10742,
+            "p50": 0.1,
+            "p95": 0.1,
+            "p99": 0.1,
+            "max": 0.35,
+            "quantile_resolution_ms": 0.1
+          }
+        }
+      },
+      "rates": {
+        "captured_fps": 59.99275957150995,
+        "encoded_fps": 59.99275957150995,
+        "decoded_fps": 59.99275957150995,
+        "displayed_fps": 59.57420543496453,
+        "actual_mbps": 19.37361371102989
+      },
+      "latency_by_minute": [
+        {
+          "minute_monotonic": 395,
+          "n": 838,
+          "p50_ms": 35.58,
+          "p95_ms": 36.236
+        },
+        {
+          "minute_monotonic": 396,
+          "n": 3578,
+          "p50_ms": 31.664,
+          "p95_ms": 34.562
+        },
+        {
+          "minute_monotonic": 397,
+          "n": 3546,
+          "p50_ms": 27.523,
+          "p95_ms": 40.831
+        },
+        {
+          "minute_monotonic": 398,
+          "n": 2780,
+          "p50_ms": 36.242,
+          "p95_ms": 38.403
+        }
+      ],
+      "v4l2_flag_counts": {
+        "8193": 11028
+      },
+      "max_temperature_c": 48.076,
+      "max_rss_mib": 107.828125,
+      "mean_cpu_one_core_percent": 5.938603039495294,
+      "quality_matched_single_frame": {
+        "stream_probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 3840,
+              "height": 2160,
+              "has_b_frames": 0,
+              "color_range": "pc",
+              "color_space": "bt709",
+              "r_frame_rate": "120/1"
+            }
+          ]
+        },
+        "psnr": 38.717309,
+        "ssim": 0.917226
+      },
+      "frame_audit": {
+        "unique_frame_ids": 11111,
+        "duplicate_ids": 0,
+        "nonmonotonic_display_timelines": 0,
+        "outcomes": {
+          "invalid_driver_timestamp": 4,
+          "displayed": 11028,
+          "display_replaced": 77,
+          "stopped_display": 1,
+          "stopped_decoder": 1
+        },
+        "all_capture_ids_accounted": true
+      },
+      "deadline_audit": {
+        "targeted_frames": 10742,
+        "missed_targets": 75,
+        "missed_target_percent": 0.6981940048408117,
+        "commit_lead_p50_ms": 3.439,
+        "commit_lead_min_ms": -19.12,
+        "counter_matches_trace": true
+      },
+      "stall_recovery": null,
+      "mpp_fd_observed": true,
+      "restored": true,
+      "meets_internal_targets": true,
+      "name": "h264-dma-wait-1",
+      "output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/v3-dma-comparison-20261117/h264-dma-wait-1",
+      "cadence": {
+        "displayed_frames": 10742,
+        "interval_p99_ms": 16.714,
+        "interval_max_ms": 50.0,
+        "interval_over25ms": 75,
+        "interval_over41_7ms": 1,
+        "misses": 75,
+        "misses_with_decode_after_target": 61,
+        "misses_with_commit_after_target": 71
+      },
+      "args": [
+        "--seconds",
+        "180",
+        "--codec",
+        "h264",
+        "--buffers",
+        "8",
+        "--capture-layout",
+        "nv12",
+        "--encoder-input",
+        "dmabuf",
+        "--decoder-output",
+        "wait",
+        "--overlay-preparation",
+        "worker",
+        "--capture-startup-poll-ms",
+        "0",
+        "--display-scheduling",
+        "deadline",
+        "--display-margin-us",
+        "3500"
+      ]
+    },
+    {
+      "completed": true,
+      "scope": "V4L2_DQBUF_TO_DRM_FLIP_NOT_OPTICAL",
+      "summary": {
+        "codec": "h264",
+        "display_scheduling": "deadline",
+        "display_margin_us": 3500,
+        "missed_targets": 46,
+        "max_overlay_prepare_ms": 0.001,
+        "overlay_preparation": "worker",
+        "max_overlay_worker_ms": 0.675,
+        "overlay_updates": 164,
+        "overlay_errors": 0,
+        "decoder_output": "wait",
+        "decoder_output_calls": 11300,
+        "decoder_empty_returns": 0,
+        "decoder_output_timeouts": 192,
+        "decoder_legacy_wait_timeouts": 192,
+        "capture_layout": "nv12",
+        "encoder_input": "dmabuf",
+        "input_copied_frames": 0,
+        "input_shared_frames": 11108,
+        "camera_dma_imports": 8,
+        "held_camera_peak": 2,
+        "capture_buffers_actual": 8,
+        "elapsed_s": 185.428,
+        "captured": 11112,
+        "encoded": 11108,
+        "decoded": 11107,
+        "displayed": 11058,
+        "bytes": 454940473,
+        "raw_drops": 0,
+        "display_drops": 48,
+        "stale_drops": 4,
+        "driver_gaps": 0,
+        "startup_sequence_gaps": 251,
+        "errors": 0,
+        "interrupted": false,
+        "latency": {
+          "commit_lead_ms": {
+            "n": 10728,
+            "p50": 3.5,
+            "p95": 3.5,
+            "p99": 3.5,
+            "max": 3.491,
+            "quantile_resolution_ms": 0.1
+          },
+          "decode_ms": {
+            "n": 10772,
+            "p50": 6,
+            "p95": 6,
+            "p99": 12.1,
+            "max": 18.558,
+            "quantile_resolution_ms": 0.1
+          },
+          "display_wait_ms": {
+            "n": 10772,
+            "p50": 8.4,
+            "p95": 15.6,
+            "p99": 16.4,
+            "max": 18.673,
+            "quantile_resolution_ms": 0.1
+          },
+          "dq_to_flip_ms": {
+            "n": 10772,
+            "p50": 32.9,
+            "p95": 40.2,
+            "p99": 41,
+            "max": 50.26,
+            "quantile_resolution_ms": 0.1
+          },
+          "dq_to_flip_received_ms": {
+            "n": 10772,
+            "p50": 32.9,
+            "p95": 40.2,
+            "p99": 41,
+            "max": 50.297,
+            "quantile_resolution_ms": 0.1
+          },
+          "driver_timestamp_to_flip_ms": {
+            "n": 10772,
+            "p50": 64.9,
+            "p95": 72.2,
+            "p99": 73,
+            "max": 82.219,
+            "quantile_resolution_ms": 0.1
+          },
+          "encode_ms": {
+            "n": 10772,
+            "p50": 15.1,
+            "p95": 15.2,
+            "p99": 15.8,
+            "max": 21.544,
+            "quantile_resolution_ms": 0.1
+          },
+          "kms_flip_ms": {
+            "n": 10772,
+            "p50": 3.5,
+            "p95": 3.5,
+            "p99": 3.5,
+            "max": 16.717,
+            "quantile_resolution_ms": 0.1
+          },
+          "layout_copy_ms": {
+            "n": 10772,
+            "p50": 0.1,
+            "p95": 0.1,
+            "p99": 0.1,
+            "max": 0.008,
+            "quantile_resolution_ms": 0.1
+          },
+          "raw_wait_ms": {
+            "n": 10772,
+            "p50": 0.1,
+            "p95": 0.1,
+            "p99": 0.1,
+            "max": 0.955,
+            "quantile_resolution_ms": 0.1
+          }
+        }
+      },
+      "rates": {
+        "captured_fps": 59.996488718193525,
+        "encoded_fps": 59.996488718193525,
+        "decoded_fps": 59.996488718193525,
+        "displayed_fps": 59.74536398632498,
+        "actual_mbps": 19.657839896487506
+      },
+      "latency_by_minute": [
+        {
+          "minute_monotonic": 398,
+          "n": 250,
+          "p50_ms": 33.683,
+          "p95_ms": 34.204
+        },
+        {
+          "minute_monotonic": 399,
+          "n": 3585,
+          "p50_ms": 30.281,
+          "p95_ms": 33.138
+        },
+        {
+          "minute_monotonic": 400,
+          "n": 3570,
+          "p50_ms": 37.91,
+          "p95_ms": 40.785
+        },
+        {
+          "minute_monotonic": 401,
+          "n": 3367,
+          "p50_ms": 34.284,
+          "p95_ms": 36.98
+        }
+      ],
+      "v4l2_flag_counts": {
+        "8193": 11058
+      },
+      "max_temperature_c": 48.076,
+      "max_rss_mib": 107.7890625,
+      "mean_cpu_one_core_percent": 5.913264982845476,
+      "quality_matched_single_frame": {
+        "stream_probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 3840,
+              "height": 2160,
+              "has_b_frames": 0,
+              "color_range": "pc",
+              "color_space": "bt709",
+              "r_frame_rate": "120/1"
+            }
+          ]
+        },
+        "psnr": 29.49044,
+        "ssim": 0.746584
+      },
+      "frame_audit": {
+        "unique_frame_ids": 11112,
+        "duplicate_ids": 0,
+        "nonmonotonic_display_timelines": 0,
+        "outcomes": {
+          "invalid_driver_timestamp": 4,
+          "displayed": 11058,
+          "display_replaced": 48,
+          "stopped_display": 1,
+          "stopped_decoder": 1
+        },
+        "all_capture_ids_accounted": true
+      },
+      "deadline_audit": {
+        "targeted_frames": 10772,
+        "missed_targets": 46,
+        "missed_target_percent": 0.42703304864463426,
+        "commit_lead_p50_ms": 3.44,
+        "commit_lead_min_ms": -6.401,
+        "counter_matches_trace": true
+      },
+      "stall_recovery": null,
+      "mpp_fd_observed": true,
+      "restored": true,
+      "meets_internal_targets": true,
+      "name": "h264-dma-wait-2",
+      "output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/v3-dma-comparison-20261117/h264-dma-wait-2",
+      "cadence": {
+        "displayed_frames": 10772,
+        "interval_p99_ms": 16.684,
+        "interval_max_ms": 33.339,
+        "interval_over25ms": 46,
+        "interval_over41_7ms": 0,
+        "misses": 46,
+        "misses_with_decode_after_target": 41,
+        "misses_with_commit_after_target": 44
+      },
+      "args": [
+        "--seconds",
+        "180",
+        "--codec",
+        "h264",
+        "--buffers",
+        "8",
+        "--capture-layout",
+        "nv12",
+        "--encoder-input",
+        "dmabuf",
+        "--decoder-output",
+        "wait",
+        "--overlay-preparation",
+        "worker",
+        "--capture-startup-poll-ms",
+        "0",
+        "--display-scheduling",
+        "deadline",
+        "--display-margin-us",
+        "3500"
+      ]
+    },
+    {
+      "completed": true,
+      "scope": "V4L2_DQBUF_TO_DRM_FLIP_NOT_OPTICAL",
+      "summary": {
+        "codec": "hevc",
+        "display_scheduling": "deadline",
+        "display_margin_us": 3500,
+        "missed_targets": 22,
+        "max_overlay_prepare_ms": 0.001,
+        "overlay_preparation": "worker",
+        "max_overlay_worker_ms": 0.62,
+        "overlay_updates": 165,
+        "overlay_errors": 0,
+        "decoder_output": "wait",
+        "decoder_output_calls": 11119,
+        "decoder_empty_returns": 0,
+        "decoder_output_timeouts": 10,
+        "decoder_legacy_wait_timeouts": 10,
+        "capture_layout": "nv12",
+        "encoder_input": "dmabuf",
+        "input_copied_frames": 0,
+        "input_shared_frames": 11109,
+        "camera_dma_imports": 8,
+        "held_camera_peak": 2,
+        "capture_buffers_actual": 8,
+        "elapsed_s": 185.428,
+        "captured": 11113,
+        "encoded": 11109,
+        "decoded": 11108,
+        "displayed": 11083,
+        "bytes": 429727036,
+        "raw_drops": 0,
+        "display_drops": 24,
+        "stale_drops": 4,
+        "driver_gaps": 0,
+        "startup_sequence_gaps": 294,
+        "errors": 0,
+        "interrupted": false,
+        "latency": {
+          "commit_lead_ms": {
+            "n": 10777,
+            "p50": 3.5,
+            "p95": 3.5,
+            "p99": 3.5,
+            "max": 3.495,
+            "quantile_resolution_ms": 0.1
+          },
+          "decode_ms": {
+            "n": 10798,
+            "p50": 4.7,
+            "p95": 4.7,
+            "p99": 6.9,
+            "max": 17.216,
+            "quantile_resolution_ms": 0.1
+          },
+          "display_wait_ms": {
+            "n": 10798,
+            "p50": 6.7,
+            "p95": 15.4,
+            "p99": 16.2,
+            "max": 17.127,
+            "quantile_resolution_ms": 0.1
+          },
+          "dq_to_flip_ms": {
+            "n": 10798,
+            "p50": 29.8,
+            "p95": 38.4,
+            "p99": 39.2,
+            "max": 48.77,
+            "quantile_resolution_ms": 0.1
+          },
+          "dq_to_flip_received_ms": {
+            "n": 10798,
+            "p50": 29.8,
+            "p95": 38.4,
+            "p99": 39.2,
+            "max": 48.807,
+            "quantile_resolution_ms": 0.1
+          },
+          "driver_timestamp_to_flip_ms": {
+            "n": 10798,
+            "p50": 61.8,
+            "p95": 70.4,
+            "p99": 71.2,
+            "max": 80.765,
+            "quantile_resolution_ms": 0.1
+          },
+          "encode_ms": {
+            "n": 10798,
+            "p50": 15,
+            "p95": 15,
+            "p99": 15.6,
+            "max": 20.794,
+            "quantile_resolution_ms": 0.1
+          },
+          "kms_flip_ms": {
+            "n": 10798,
+            "p50": 3.5,
+            "p95": 3.5,
+            "p99": 3.5,
+            "max": 20.109,
+            "quantile_resolution_ms": 0.1
+          },
+          "layout_copy_ms": {
+            "n": 10798,
+            "p50": 0.1,
+            "p95": 0.1,
+            "p99": 0.1,
+            "max": 0.008,
+            "quantile_resolution_ms": 0.1
+          },
+          "raw_wait_ms": {
+            "n": 10798,
+            "p50": 0.1,
+            "p95": 0.1,
+            "p99": 0.1,
+            "max": 0.199,
+            "quantile_resolution_ms": 0.1
+          }
+        }
+      },
+      "rates": {
+        "captured_fps": 59.998178626720254,
+        "encoded_fps": 59.99259843897595,
+        "decoded_fps": 59.998178626720254,
+        "displayed_fps": 59.88657487183424,
+        "actual_mbps": 18.5234422347893
+      },
+      "latency_by_minute": [
+        {
+          "minute_monotonic": 402,
+          "n": 3219,
+          "p50_ms": 36.409,
+          "p95_ms": 38.991
+        },
+        {
+          "minute_monotonic": 403,
+          "n": 3595,
+          "p50_ms": 32.966,
+          "p95_ms": 35.858
+        },
+        {
+          "minute_monotonic": 404,
+          "n": 3587,
+          "p50_ms": 26.6,
+          "p95_ms": 29.483
+        },
+        {
+          "minute_monotonic": 405,
+          "n": 397,
+          "p50_ms": 23.034,
+          "p95_ms": 23.377
+        }
+      ],
+      "v4l2_flag_counts": {
+        "8193": 11083
+      },
+      "max_temperature_c": 48.076,
+      "max_rss_mib": 108.97265625,
+      "mean_cpu_one_core_percent": 5.703319788107974,
+      "quality_matched_single_frame": {
+        "stream_probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "width": 3840,
+              "height": 2160,
+              "has_b_frames": 0,
+              "color_range": "pc",
+              "color_space": "bt709",
+              "r_frame_rate": "60/1"
+            }
+          ]
+        },
+        "psnr": 31.786943,
+        "ssim": 0.84587
+      },
+      "frame_audit": {
+        "unique_frame_ids": 11113,
+        "duplicate_ids": 0,
+        "nonmonotonic_display_timelines": 0,
+        "outcomes": {
+          "invalid_driver_timestamp": 4,
+          "displayed": 11083,
+          "display_replaced": 24,
+          "stopped_display": 1,
+          "stopped_decoder": 1
+        },
+        "all_capture_ids_accounted": true
+      },
+      "deadline_audit": {
+        "targeted_frames": 10798,
+        "missed_targets": 22,
+        "missed_target_percent": 0.2037414335988146,
+        "commit_lead_p50_ms": 3.441,
+        "commit_lead_min_ms": -9.443,
+        "counter_matches_trace": true
+      },
+      "stall_recovery": null,
+      "mpp_fd_observed": true,
+      "restored": true,
+      "meets_internal_targets": true,
+      "name": "hevc-dma-wait-2",
+      "output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/v3-dma-comparison-20261117/hevc-dma-wait-2",
+      "cadence": {
+        "displayed_frames": 10798,
+        "interval_p99_ms": 16.674,
+        "interval_max_ms": 33.34,
+        "interval_over25ms": 22,
+        "interval_over41_7ms": 0,
+        "misses": 22,
+        "misses_with_decode_after_target": 21,
+        "misses_with_commit_after_target": 21
+      },
+      "args": [
+        "--seconds",
+        "180",
+        "--codec",
+        "hevc",
+        "--buffers",
+        "8",
+        "--capture-layout",
+        "nv12",
+        "--encoder-input",
+        "dmabuf",
+        "--decoder-output",
+        "wait",
+        "--overlay-preparation",
+        "worker",
+        "--capture-startup-poll-ms",
+        "0",
+        "--display-scheduling",
+        "deadline",
+        "--display-margin-us",
+        "3500"
+      ]
+    },
+    {
+      "completed": true,
+      "scope": "V4L2_DQBUF_TO_DRM_FLIP_NOT_OPTICAL",
+      "summary": {
+        "codec": "hevc",
+        "display_scheduling": "deadline",
+        "display_margin_us": 5000,
+        "missed_targets": 9,
+        "max_overlay_prepare_ms": 0.001,
+        "overlay_preparation": "worker",
+        "max_overlay_worker_ms": 0.628,
+        "overlay_updates": 164,
+        "overlay_errors": 0,
+        "decoder_output": "wait",
+        "decoder_output_calls": 11120,
+        "decoder_empty_returns": 0,
+        "decoder_output_timeouts": 10,
+        "decoder_legacy_wait_timeouts": 10,
+        "capture_layout": "nv12",
+        "encoder_input": "dmabuf",
+        "input_copied_frames": 0,
+        "input_shared_frames": 11110,
+        "camera_dma_imports": 8,
+        "held_camera_peak": 2,
+        "capture_buffers_actual": 8,
+        "elapsed_s": 185.445,
+        "captured": 11114,
+        "encoded": 11110,
+        "decoded": 11109,
+        "displayed": 11095,
+        "bytes": 430671253,
+        "raw_drops": 0,
+        "display_drops": 13,
+        "stale_drops": 4,
+        "driver_gaps": 0,
+        "startup_sequence_gaps": 232,
+        "errors": 0,
+        "interrupted": false,
+        "latency": {
+          "commit_lead_ms": {
+            "n": 10805,
+            "p50": 5,
+            "p95": 5,
+            "p99": 5,
+            "max": 4.994,
+            "quantile_resolution_ms": 0.1
+          },
+          "decode_ms": {
+            "n": 10812,
+            "p50": 4.7,
+            "p95": 4.7,
+            "p99": 6.9,
+            "max": 14.595,
+            "quantile_resolution_ms": 0.1
+          },
+          "display_wait_ms": {
+            "n": 10812,
+            "p50": 6.6,
+            "p95": 15.2,
+            "p99": 16,
+            "max": 24.049,
+            "quantile_resolution_ms": 0.1
+          },
+          "dq_to_flip_ms": {
+            "n": 10812,
+            "p50": 31.2,
+            "p95": 39.7,
+            "p99": 40.5,
+            "max": 57.164,
+            "quantile_resolution_ms": 0.1
+          },
+          "dq_to_flip_received_ms": {
+            "n": 10812,
+            "p50": 31.2,
+            "p95": 39.7,
+            "p99": 40.5,
+            "max": 57.193,
+            "quantile_resolution_ms": 0.1
+          },
+          "driver_timestamp_to_flip_ms": {
+            "n": 10812,
+            "p50": 63.1,
+            "p95": 71.7,
+            "p99": 72.4,
+            "max": 89.134,
+            "quantile_resolution_ms": 0.1
+          },
+          "encode_ms": {
+            "n": 10812,
+            "p50": 15,
+            "p95": 15,
+            "p99": 15.6,
+            "max": 17.016,
+            "quantile_resolution_ms": 0.1
+          },
+          "kms_flip_ms": {
+            "n": 10812,
+            "p50": 5,
+            "p95": 5,
+            "p99": 5,
+            "max": 16.686,
+            "quantile_resolution_ms": 0.1
+          },
+          "layout_copy_ms": {
+            "n": 10812,
+            "p50": 0.1,
+            "p95": 0.1,
+            "p99": 0.1,
+            "max": 0.006,
+            "quantile_resolution_ms": 0.1
+          },
+          "raw_wait_ms": {
+            "n": 10812,
+            "p50": 0.1,
+            "p95": 0.1,
+            "p99": 0.1,
+            "max": 0.948,
+            "quantile_resolution_ms": 0.1
+          }
+        }
+      },
+      "rates": {
+        "captured_fps": 59.99599915072628,
+        "encoded_fps": 59.99599915072628,
+        "decoded_fps": 59.99041916568622,
+        "displayed_fps": 59.951359270405796,
+        "actual_mbps": 18.565762115751767
+      },
+      "latency_by_minute": [
+        {
+          "minute_monotonic": 405,
+          "n": 2647,
+          "p50_ms": 38.245,
+          "p95_ms": 40.37
+        },
+        {
+          "minute_monotonic": 406,
+          "n": 3600,
+          "p50_ms": 33.631,
+          "p95_ms": 36.509
+        },
+        {
+          "minute_monotonic": 407,
+          "n": 3597,
+          "p50_ms": 27.219,
+          "p95_ms": 30.119
+        },
+        {
+          "minute_monotonic": 408,
+          "n": 968,
+          "p50_ms": 23.294,
+          "p95_ms": 39.008
+        }
+      ],
+      "v4l2_flag_counts": {
+        "8193": 11095
+      },
+      "max_temperature_c": 48.076,
+      "max_rss_mib": 108.8828125,
+      "mean_cpu_one_core_percent": 5.501567705298941,
+      "quality_matched_single_frame": {
+        "stream_probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "width": 3840,
+              "height": 2160,
+              "has_b_frames": 0,
+              "color_range": "pc",
+              "color_space": "bt709",
+              "r_frame_rate": "60/1"
+            }
+          ]
+        },
+        "psnr": 31.66024,
+        "ssim": 0.840941
+      },
+      "frame_audit": {
+        "unique_frame_ids": 11114,
+        "duplicate_ids": 0,
+        "nonmonotonic_display_timelines": 0,
+        "outcomes": {
+          "invalid_driver_timestamp": 4,
+          "displayed": 11095,
+          "display_replaced": 13,
+          "stopped_display": 1,
+          "stopped_decoder": 1
+        },
+        "all_capture_ids_accounted": true
+      },
+      "deadline_audit": {
+        "targeted_frames": 10812,
+        "missed_targets": 9,
+        "missed_target_percent": 0.08324084350721421,
+        "commit_lead_p50_ms": 4.94,
+        "commit_lead_min_ms": -7.122,
+        "counter_matches_trace": true
+      },
+      "stall_recovery": null,
+      "mpp_fd_observed": true,
+      "restored": true,
+      "meets_internal_targets": true,
+      "name": "hevc-dma-margin5000",
+      "output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/v3-dma-comparison-20261117/hevc-dma-margin5000",
+      "cadence": {
+        "displayed_frames": 10812,
+        "interval_p99_ms": 16.674,
+        "interval_max_ms": 33.339,
+        "interval_over25ms": 9,
+        "interval_over41_7ms": 0,
+        "misses": 9,
+        "misses_with_decode_after_target": 4,
+        "misses_with_commit_after_target": 7
+      },
+      "args": [
+        "--seconds",
+        "180",
+        "--codec",
+        "hevc",
+        "--buffers",
+        "8",
+        "--capture-layout",
+        "nv12",
+        "--encoder-input",
+        "dmabuf",
+        "--decoder-output",
+        "wait",
+        "--overlay-preparation",
+        "worker",
+        "--capture-startup-poll-ms",
+        "0",
+        "--display-scheduling",
+        "deadline",
+        "--display-margin-us",
+        "5000"
+      ]
+    }
+  ],
+  "boot_id": "c7e16e83-4bc8-4d23-906a-568e75be624f",
+  "current_case": "hevc-dma-margin5000"
+}

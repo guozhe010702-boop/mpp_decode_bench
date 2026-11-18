@@ -1,0 +1,139 @@
+{
+  "status": "published",
+  "published_at": "2026-11-18T09:35:22.682656+08:00",
+  "profile": {
+    "encoder_input": "dmabuf",
+    "validation_status": "passed",
+    "display_margin_us": 3500,
+    "cpu_affinity": "big",
+    "decoder_output": "wait",
+    "capture_layout": "nv12",
+    "capture_startup_poll_ms": 0,
+    "codec": "hevc",
+    "display_scheduling": "deadline",
+    "bitrate": 20000000,
+    "buffers": 8,
+    "capture_scheduling": "raw-rr",
+    "overlay_preparation": "worker",
+    "endurance_status": "passed",
+    "continuous_test_seconds": 3600,
+    "endurance_seconds": 3600,
+    "validation_output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/v3-dma-comparison-20261117",
+    "endurance_output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/v3-final-60min-20261117"
+  },
+  "baseline_mean_cpu_one_core_percent": 20.622893009587706,
+  "dma_mean_cpu_one_core_percent": 5.707139279777742,
+  "baseline_round_mean_p95_ms": 40.5,
+  "dma_round_mean_p95_ms": 38.05,
+  "h264_round_mean_p95_ms": 40.150000000000006,
+  "final_rates": {
+    "captured_fps": 59.99649660605308,
+    "encoded_fps": 59.9962187441557,
+    "decoded_fps": 59.99649660605308,
+    "displayed_fps": 59.96009669749632,
+    "actual_mbps": 20.050050105446644
+  },
+  "final_internal_latency": {
+    "n": 215859,
+    "p50": 29.7,
+    "p95": 37.1,
+    "p99": 38.6,
+    "max": 50.993,
+    "quantile_resolution_ms": 0.1
+  },
+  "final_driver_timestamp_latency": {
+    "n": 215859,
+    "p50": 78.3,
+    "p95": 85.8,
+    "p99": 87.2,
+    "max": 99.613,
+    "quantile_resolution_ms": 0.1
+  },
+  "final_cpu_one_core_percent": 5.547998996512083,
+  "final_temperature_c": 43.461,
+  "final_rss_mib": 106.55859375,
+  "extra_acceptance": {
+    "passed": true,
+    "encoder_input": "dmabuf",
+    "cadence": {
+      "displayed_frames": 215859,
+      "interval_p99_ms": 16.676,
+      "interval_max_ms": 33.383,
+      "interval_over25ms": 154,
+      "interval_over41_7ms": 0,
+      "misses": 154,
+      "misses_with_decode_after_target": 120,
+      "misses_with_commit_after_target": 140
+    },
+    "camera_imports": 8,
+    "camera_buffers": 8,
+    "held_camera_peak": 2,
+    "input_shared_frames": 216275,
+    "input_copied_frames": 0,
+    "matching_source_quality": {
+      "stream_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "hevc",
+            "width": 3840,
+            "height": 2160,
+            "has_b_frames": 0,
+            "color_range": "pc",
+            "color_space": "bt709",
+            "r_frame_rate": "60/1"
+          }
+        ]
+      },
+      "psnr": 36.502194,
+      "ssim": 0.873934
+    }
+  },
+  "final_state": {
+    "boot_id": "c7e16e83-4bc8-4d23-906a-568e75be624f",
+    "same_build_as_comparison": true,
+    "camera_owners": [],
+    "raw_workers": [
+      {
+        "pid": 664,
+        "tid": 71618,
+        "start": "7777516",
+        "comm": "xc:isp_tx_poll",
+        "exe": "/usr/bin/rkaiq_3A_server",
+        "policy": 0,
+        "priority": 0
+      },
+      {
+        "pid": 664,
+        "tid": 71619,
+        "start": "7777516",
+        "comm": "xc:isp_rx_poll",
+        "exe": "/usr/bin/rkaiq_3A_server",
+        "policy": 0,
+        "priority": 0
+      },
+      {
+        "pid": 664,
+        "tid": 71620,
+        "start": "7777516",
+        "comm": "xc:RawProcThrea",
+        "exe": "/usr/bin/rkaiq_3A_server",
+        "policy": 0,
+        "priority": 0
+      }
+    ],
+    "raw_scheduler_journal_exists": false,
+    "restored": true,
+    "capture_scheduler_restored": true,
+    "desktop_active": true,
+    "desktop_was_active": true,
+    "preview_active": false,
+    "benchmark_active": false
+  },
+  "notes": [
+    "Round P95 means are not merged-frame quantiles.",
+    "No optical end-to-end claim.",
+    "The earlier spontaneous reboot root cause remains unconfirmed."
+  ]
+}

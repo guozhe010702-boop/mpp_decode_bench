@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "encoder_input": "dmabuf",
+  "cadence": {
+    "displayed_frames": 215859,
+    "interval_p99_ms": 16.676,
+    "interval_max_ms": 33.383,
+    "interval_over25ms": 154,
+    "interval_over41_7ms": 0,
+    "misses": 154,
+    "misses_with_decode_after_target": 120,
+    "misses_with_commit_after_target": 140
+  },
+  "camera_imports": 8,
+  "camera_buffers": 8,
+  "held_camera_peak": 2,
+  "input_shared_frames": 216275,
+  "input_copied_frames": 0,
+  "matching_source_quality": {
+    "stream_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "hevc",
+          "width": 3840,
+          "height": 2160,
+          "has_b_frames": 0,
+          "color_range": "pc",
+          "color_space": "bt709",
+          "r_frame_rate": "60/1"
+        }
+      ]
+    },
+    "psnr": 36.502194,
+    "ssim": 0.873934
+  }
+}

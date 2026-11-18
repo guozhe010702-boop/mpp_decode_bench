@@ -1,0 +1,170 @@
+[
+    {
+        "args":  [
+                     "--seconds",
+                     "180",
+                     "--codec",
+                     "hevc",
+                     "--buffers",
+                     "8",
+                     "--capture-startup-poll-ms",
+                     "0",
+                     "--overlay-preparation",
+                     "worker",
+                     "--decoder-output",
+                     "poll",
+                     "--display-scheduling",
+                     "deadline",
+                     "--display-margin-us",
+                     "3500"
+                 ],
+        "name":  "hevc-poll-1"
+    },
+    {
+        "args":  [
+                     "--seconds",
+                     "180",
+                     "--codec",
+                     "hevc",
+                     "--buffers",
+                     "8",
+                     "--capture-startup-poll-ms",
+                     "0",
+                     "--overlay-preparation",
+                     "worker",
+                     "--decoder-output",
+                     "wait",
+                     "--display-scheduling",
+                     "deadline",
+                     "--display-margin-us",
+                     "3500"
+                 ],
+        "name":  "hevc-wait-1"
+    },
+    {
+        "args":  [
+                     "--seconds",
+                     "180",
+                     "--codec",
+                     "hevc",
+                     "--buffers",
+                     "8",
+                     "--capture-startup-poll-ms",
+                     "0",
+                     "--overlay-preparation",
+                     "worker",
+                     "--decoder-output",
+                     "wait",
+                     "--display-scheduling",
+                     "deadline",
+                     "--display-margin-us",
+                     "5000"
+                 ],
+        "name":  "hevc-wait-margin5000"
+    },
+    {
+        "args":  [
+                     "--seconds",
+                     "180",
+                     "--codec",
+                     "hevc",
+                     "--buffers",
+                     "8",
+                     "--capture-startup-poll-ms",
+                     "0",
+                     "--overlay-preparation",
+                     "worker",
+                     "--decoder-output",
+                     "wait",
+                     "--display-scheduling",
+                     "deadline",
+                     "--display-margin-us",
+                     "3500"
+                 ],
+        "name":  "hevc-wait-2"
+    },
+    {
+        "args":  [
+                     "--seconds",
+                     "180",
+                     "--codec",
+                     "hevc",
+                     "--buffers",
+                     "8",
+                     "--capture-startup-poll-ms",
+                     "0",
+                     "--overlay-preparation",
+                     "worker",
+                     "--decoder-output",
+                     "poll",
+                     "--display-scheduling",
+                     "deadline",
+                     "--display-margin-us",
+                     "3500"
+                 ],
+        "name":  "hevc-poll-2"
+    },
+    {
+        "args":  [
+                     "--seconds",
+                     "180",
+                     "--codec",
+                     "h264",
+                     "--buffers",
+                     "8",
+                     "--capture-startup-poll-ms",
+                     "0",
+                     "--overlay-preparation",
+                     "worker",
+                     "--decoder-output",
+                     "wait",
+                     "--display-scheduling",
+                     "deadline",
+                     "--display-margin-us",
+                     "3500"
+                 ],
+        "name":  "h264-wait-1"
+    },
+    {
+        "args":  [
+                     "--seconds",
+                     "180",
+                     "--codec",
+                     "h264",
+                     "--buffers",
+                     "8",
+                     "--capture-startup-poll-ms",
+                     "0",
+                     "--overlay-preparation",
+                     "worker",
+                     "--decoder-output",
+                     "wait",
+                     "--display-scheduling",
+                     "deadline",
+                     "--display-margin-us",
+                     "3500"
+                 ],
+        "name":  "h264-wait-2"
+    },
+    {
+        "args":  [
+                     "--seconds",
+                     "180",
+                     "--codec",
+                     "hevc",
+                     "--buffers",
+                     "8",
+                     "--capture-startup-poll-ms",
+                     "0",
+                     "--overlay-preparation",
+                     "worker",
+                     "--decoder-output",
+                     "wait",
+                     "--display-scheduling",
+                     "deadline",
+                     "--display-margin-us",
+                     "3500"
+                 ],
+        "name":  "hevc-wait-3"
+    }
+]

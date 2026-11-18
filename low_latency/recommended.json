@@ -1,0 +1,20 @@
+{
+  "encoder_input": "dmabuf",
+  "validation_status": "passed",
+  "display_margin_us": 3500,
+  "cpu_affinity": "big",
+  "decoder_output": "wait",
+  "capture_layout": "nv12",
+  "capture_startup_poll_ms": 0,
+  "codec": "hevc",
+  "display_scheduling": "deadline",
+  "bitrate": 20000000,
+  "buffers": 8,
+  "capture_scheduling": "raw-rr",
+  "overlay_preparation": "worker",
+  "endurance_status": "passed",
+  "continuous_test_seconds": 3600,
+  "endurance_seconds": 3600,
+  "validation_output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/v3-dma-comparison-20261117",
+  "endurance_output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/v3-final-60min-20261117"
+}

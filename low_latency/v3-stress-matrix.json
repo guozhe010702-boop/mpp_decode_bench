@@ -1,0 +1,38 @@
+[
+    {
+        "args":  [
+                     "--seconds",
+                     "45",
+                     "--codec",
+                     "hevc",
+                     "--overlay-preparation",
+                     "worker",
+                     "--decoder-output",
+                     "wait",
+                     "--inject-overlay-stall-ms",
+                     "300",
+                     "--display-margin-us",
+                     "3500"
+                 ],
+        "name":  "hud-delay300ms"
+    },
+    {
+        "args":  [
+                     "--seconds",
+                     "60",
+                     "--codec",
+                     "hevc",
+                     "--overlay-preparation",
+                     "worker",
+                     "--decoder-output",
+                     "wait",
+                     "--inject-stall-ms",
+                     "250",
+                     "--stall-after",
+                     "15",
+                     "--display-margin-us",
+                     "3500"
+                 ],
+        "name":  "processing-stall250ms"
+    }
+]

@@ -1,0 +1,81 @@
+[
+    {
+        "args":  [
+                     "--codec",
+                     "hevc",
+                     "--buffers",
+                     "8",
+                     "--capture-layout",
+                     "nv12",
+                     "--encoder-input",
+                     "dmabuf",
+                     "--decoder-output",
+                     "wait",
+                     "--overlay-preparation",
+                     "worker",
+                     "--capture-startup-poll-ms",
+                     "0",
+                     "--display-scheduling",
+                     "deadline",
+                     "--display-margin-us",
+                     "3500",
+                     "--seconds",
+                     "60",
+                     "--inject-overlay-stall-ms",
+                     "300"
+                 ],
+        "name":  "dma-hud-delay300ms"
+    },
+    {
+        "args":  [
+                     "--codec",
+                     "hevc",
+                     "--buffers",
+                     "8",
+                     "--capture-layout",
+                     "nv12",
+                     "--encoder-input",
+                     "dmabuf",
+                     "--decoder-output",
+                     "wait",
+                     "--overlay-preparation",
+                     "worker",
+                     "--capture-startup-poll-ms",
+                     "0",
+                     "--display-scheduling",
+                     "deadline",
+                     "--display-margin-us",
+                     "3500",
+                     "--seconds",
+                     "60",
+                     "--inject-stall-ms",
+                     "250",
+                     "--stall-after",
+                     "15"
+                 ],
+        "name":  "dma-processing-stall250ms"
+    },
+    {
+        "args":  [
+                     "--codec",
+                     "direct",
+                     "--buffers",
+                     "8",
+                     "--capture-layout",
+                     "nv12",
+                     "--encoder-input",
+                     "dmabuf",
+                     "--decoder-output",
+                     "wait",
+                     "--overlay-preparation",
+                     "worker",
+                     "--display-scheduling",
+                     "deadline",
+                     "--display-margin-us",
+                     "3500",
+                     "--seconds",
+                     "30"
+                 ],
+        "name":  "nv12-direct-diagnostic"
+    }
+]

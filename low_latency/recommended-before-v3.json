@@ -1,0 +1,14 @@
+{
+  "codec": "hevc",
+  "buffers": 8,
+  "bitrate": 20000000,
+  "display_scheduling": "deadline",
+  "display_margin_us": 3500,
+  "capture_scheduling": "raw-rr",
+  "cpu_affinity": "big",
+  "validation_output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/v2-release-comparison-20261117",
+  "continuous_test_seconds": 3600,
+  "endurance_status": "passed",
+  "endurance_output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/v2-final-60min-20261117",
+  "endurance_seconds": 3600
+}

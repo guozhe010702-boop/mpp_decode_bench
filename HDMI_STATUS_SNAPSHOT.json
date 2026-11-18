@@ -1,0 +1,28 @@
+{
+  "running": true,
+  "steady_elapsed_s": 125.55797022299885,
+  "capture_fps_monotonic": 59.99393135233991,
+  "decoder_fps_average": 59.99619129411632,
+  "display_fps_average": 59.99619129411632,
+  "display_dropped_since_warmup": 0,
+  "display_queue_buffers": 0,
+  "display_queue_overruns_since_warmup": 0,
+  "capture_gaps_since_warmup": 0,
+  "capture_errors_since_warmup": 0,
+  "display_clock_sync": false,
+  "display_upstream_qos": false,
+  "encoder_cpu_percent_one_core_mean": 53.160620718568914,
+  "renderer_cpu_percent_one_core_mean": 18.287980354343446,
+  "encoder_rss_mib_mean": 249.2109375,
+  "renderer_rss_mib_mean": 123.97423895474138,
+  "peak_temperature_c": 48.076,
+  "hdmi_size": [
+    1920,
+    1080
+  ],
+  "hdmi_refresh_hz": 60.0,
+  "actual_capture_size": [
+    3840,
+    2160
+  ]
+}

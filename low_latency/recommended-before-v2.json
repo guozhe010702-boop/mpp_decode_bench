@@ -1,0 +1,7 @@
+{
+  "codec": "hevc",
+  "buffers": 4,
+  "bitrate": 20000000,
+  "acceptance_output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/acceptance-overlay-20261117",
+  "endurance_seconds": 3600
+}

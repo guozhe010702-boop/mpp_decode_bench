@@ -1,0 +1,52 @@
+{
+  "incident": "60分钟性能测试已完成并保存。随后首次显示错误注入补充测试期间，开发板出现一次非正常重启。用户随后确认当时没有手动重启、断电或调整供电，因此排除人为操作；这并不能排除供电自身波动。没有正常关机记录或保存下来的内核崩溃日志，重启根因仍未确认。中断前最后状态约为9.15秒，不能将该次补充测试记为通过。后续只读检查中启动ID未再变化，systemd的运行时看门狗配置为关闭，但现有证据不足以判断内核、驱动或其他硬件复位机制。诊断记录见results/reboot-followup-20261117.json。",
+  "changes": "源码检查后统一了正常和异常退出的资源顺序：先停止并等待全部工作线程，再禁用DRM、释放扫描帧，随后关闭MPP和摄像头。增加同步落盘的阶段日志、状态JSON持久化和陈旧指标标记。",
+  "validation_scope": "60分钟与编码对比数据来自退出处理修正前的数据处理链路；编解码和显示调度算法没有变更。修正后另做20秒性能回归、两次显示错误退出以及4项生命周期复测，均通过，复测中未再次重启。修正后的完整二进制没有重新连续运行60分钟。",
+  "lifecycle_tests": [
+    {
+      "test": "display-error-injection",
+      "passed": true,
+      "physical_hotplug_tested": false,
+      "output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/lifecycle-retest-20261117/display-error"
+    },
+    {
+      "test": "manual-stop",
+      "passed": true,
+      "output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/lifecycle-retest-20261117/manual-stop",
+      "camera_format_restored": true,
+      "desktop_restored": true,
+      "display_layout_restored": true
+    },
+    {
+      "test": "restart-stop",
+      "passed": true,
+      "output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/lifecycle-retest-20261117/restart-stop",
+      "camera_format_restored": true,
+      "desktop_restored": true,
+      "display_layout_restored": true
+    },
+    {
+      "test": "supervisor-sigkill",
+      "passed": true,
+      "output": "/userdata/av_dev/mpp_decode_bench/low_latency/results/lifecycle-retest-20261117/supervisor-sigkill",
+      "camera_format_restored": true,
+      "desktop_restored": true,
+      "display_layout_restored": true
+    }
+  ],
+  "performance_regression": {
+    "rates": {
+      "captured_fps": 59.99232350636991,
+      "encoded_fps": 59.99232350636991,
+      "decoded_fps": 59.99232350636991,
+      "displayed_fps": 59.939744782876154,
+      "actual_mbps": 19.99292879263477
+    },
+    "p95_ms": 48.3,
+    "errors": 0,
+    "driver_gaps": 0,
+    "pass": true
+  },
+  "user_confirmed_no_manual_action": true,
+  "root_cause_confirmed": false
+}
