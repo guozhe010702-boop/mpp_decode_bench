@@ -1,5 +1,7 @@
 # mpp_decode_bench：RK3588 / IMX415 4K60 实时编解码
 
+部署打包、操作、处理流程及各程序作用见 [deployment/README.md](deployment/README.md)。
+
 本项目包含摄像头性能基准、历史桌面显示对照，以及当前推荐的原生低延迟程序 **[low_latency](low_latency/README.md)**。
 
 当前 V3 链路：IMX415 4K60采集 → 连续NV12 DMA-BUF共享 → MPP H.265硬件编码 → MPP硬件解码 → DRM/KMS HDMI显示。视频左上角透明显示实际帧率、CPU、温度、内存等状态；手动启动，不安装开机启动项。
